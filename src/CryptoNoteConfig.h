@@ -9,6 +9,22 @@
 
 namespace CryptoNote {
 namespace parameters {
+//TODO nama mata uangku
+const char CRYPTONOTE_NAME[] = "balicoin";
+const uint64_t MONEY_SUPPLY = (uint64_t)(-1);
+const unsigned EMISSION_SPEED_FACTOR = 23;
+const uint64_t DIFFICULTY_TARGET = 133;
+const int P2P_DEFAULT_PORT = 13333;
+const int RPC_DEFAULT_PORT = 12333;
+const std::initializer_list<const char*> SEED_NODES = {
+  "111.11.11.11:17236",
+  "222.22.22.22:17236",
+};
+ 
+const uint64_t MINIMUM_FEE = 100000;
+const size_t CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE = 20000;
+const char GENESIS_COINBASE_TX_HEX[] = "013c01ff0001ffff...785a33d9ebdba68b0";
+furiouscoind --print-genesis-tx
 
 const uint64_t CRYPTONOTE_MAX_BLOCK_NUMBER                   = 500000000;
 const size_t   CRYPTONOTE_MAX_BLOCK_BLOB_SIZE                = 500000000;
@@ -107,6 +123,7 @@ const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "8f80f9a5a434a9f1
 //TODO Add here your network seed nodes
 const std::initializer_list<const char*> SEED_NODES = {
   //"your_seed_ip1.com:8080",
+  balicoin.sakabali.com:8080
   //"your_seed_ip2.com:8080",
 };
 
