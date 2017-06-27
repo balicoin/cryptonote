@@ -23,7 +23,7 @@ const std::initializer_list<const char*> SEED_NODES = {
  
 const uint64_t MINIMUM_FEE = 100000;
 const size_t CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE = 20000;
-const char GENESIS_COINBASE_TX_HEX[] = "013c01ff0001ffff...785a33d9ebdba68b0";
+const char GENESIS_COINBASE_TX_HEX[] = "";
 furiouscoind --print-genesis-tx
 
 const uint64_t CRYPTONOTE_MAX_BLOCK_NUMBER                   = 500000000;
